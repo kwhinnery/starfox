@@ -6,11 +6,15 @@ HTML 5 Gamepad controller input (works on latest Chrome), magically beamed to yo
 
 Install from npm with `npm install --save starfox`. Can require both on the server, and for client-side code if you're using [browserify](https://github.com/substack/node-browserify).
 
+# DEMOS
+
+Check out `demo/demo.js` for a bare-bones example. For an example of controlling an AR Drone quadcopter with the gamepad input, check out `demo/drone.js`.
+
 # API
 
 ### Server
 
-See the demo directory, specifically `demo/app.js` for a simple example.  Requiring the `starfox` module returns a singleton object, which is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+Requiring the `starfox` module returns a singleton object, which is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 ~~~javascript
 var starfox = require('starfox');
