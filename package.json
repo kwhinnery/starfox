@@ -1,0 +1,30 @@
+{
+  "name": "starfox",
+  "version": "0.0.1",
+  "description": "HTML 5 Gamepad input, streamed to node via websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/kwhinnery/starfox"
+  },
+  "keywords": [
+    "gamepad",
+    "html5",
+    "websockets"
+  ],
+  "author": "Kevin Whinnery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwhinnery/starfox/issues"
+  },
+  "homepage": "https://github.com/kwhinnery/starfox",
+  "dependencies": {
+    "ws": "^0.4.31",
+    "browserify": "^4.1.5",
+    "lodash": "^2.4.1"
+  },
+  "browser": "./lib/client.js"
+}
