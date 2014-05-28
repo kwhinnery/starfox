@@ -5,7 +5,7 @@ var http = require('http'),
 
 // Serve up our test HTML 
 var server = http.createServer(function(request, response) {
-    var testFile = fs.createReadStream(path.join(__dirname + '/demo.html'));
+    var testFile = fs.createReadStream(path.join(__dirname, 'demo.html'));
     testFile.pipe(response);
 });
 
@@ -15,7 +15,7 @@ starfox.mount(server);
 
 // Handle events for connected players
 starfox.on('connection', function(player) {
-    
+
     // Input event is emitted when the state of the controller changes
     player.on('input', function(gamepad) {
         console.log(gamepad);
