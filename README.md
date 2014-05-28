@@ -8,7 +8,7 @@ Install from npm with `npm install --save starfox`. Can require both on the serv
 
 # API
 
-## Server
+### Server
 
 See the demo directory, specifically `demo/app.js` for a simple example.  Requiring the `starfox` module returns a singleton object, which is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
@@ -38,7 +38,7 @@ starfox.on('connection', function(player) {
 });
 ~~~
 
-## Client
+### Client
 
 The browser API for Starfox is generated on the server using browserify.  It can be included as a script tag, or your client-side application can require it and use it with browserify.  A simple demo usage is in `demo/demo.html`, but here's a bit more color on the API:
 
