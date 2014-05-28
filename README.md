@@ -2,6 +2,10 @@
 
 HTML 5 Gamepad controller input (works on latest Chrome), magically beamed to your node.js application over a web socket.
 
+# INSTALL
+
+Install from npm with `npm install --save starfox`. Can require both on the server, and for client-side code if you're using [browserify](https://github.com/substack/node-browserify).
+
 # API
 
 ## Server
