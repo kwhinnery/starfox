@@ -26,8 +26,5 @@
     "browserify": "^4.1.5",
     "lodash": "^2.4.1"
   },
-  "devDependencies": {
-    "ar-drone":"git://github.com/felixge/node-ar-drone.git"
-  },
   "browser": "./lib/client.js"
 }

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Starfox Text Client">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Starfox Test Client</title>
+    <link href='//fonts.googleapis.com/css?family=Audiowide' 
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="starfox.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Starfox Test Client</h1>
+        <div id="gamepads">
+            <p class="message">
+                No gamepads detected. Ensure your gamepad is connected and 
+                press any button to continue.
+            </p>
+        </div>
+    </div>
+
+    <script type="text/lodash" id="gamepadTemplate">
+    <div class="gamepad">
+        <h3>Gamepad <%= index %></h3>
+        <p><%= id %></p>
+        <p>Gamepad Mapping: <span><%= mapping || 'Not Known By Browser' %></span></p>
+        <hr/>
+        <div class="axes">
+            <h4>Axes</h4>
+            <table>
+            <% axes.forEach(function(axis, i) { %>
+                <tr>
+                    <th>Axis <%= i %></th>
+                    <% var offset = axis > 0 ? 7 : 8; %>
+                    <td><%= axis.toString().substring(0, offset) %></td>
+                </tr>
+            <% }); %>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <h4>Buttons</h4>
+            <table>
+            <% buttons.forEach(function(button, i) { %>
+                <div class="button <%= button.pressed ? 'pressed' : '' %>">
+                    <div><%= i %></div>
+                </div>
+            <% }); %>
+            </table>
+        </div>
+    </div>
+    </script>
+
+    <script type="text/lodash" id="noGamepadsTemplate">
+    <p class="message">
+        No gamepads detected. Ensure your gamepad is connected and 
+        press any button to continue.
+    </p>
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js">
+    </script>
+    <script src="starfox.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

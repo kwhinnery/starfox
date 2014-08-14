@@ -1,0 +1,97 @@
+/* Eric Meyer's Reset CSS v2.0 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+    height:100%;
+    width:100%;
+    background:url(starfox.png) no-repeat #000;
+    background-size:cover;
+    background-position: top;
+    font-family: Helvetica;
+}
+
+#container {
+    background-color:#000;
+    color:lime;
+    width:960px;
+    margin:10px auto;
+    opacity:0.8;
+}
+
+h1, h2, h3, h4 {
+    font-family:"Audiowide",Helvetica, sans-serif;
+    margin-bottom:10px;
+}
+h1 { font-size:2em; }
+h2 { font-size:1.6em; }
+h3 { font-size:1.4em; }
+
+#container h1 {
+    text-align:center;
+    border-bottom:1px solid;
+    padding:5px;
+}
+
+#container p {
+    font-size:0.6em;
+    text-align:center;
+    padding:5px;
+    font-style:italic;
+    color:#fff;
+}
+
+.gamepad {
+    width:460px;
+    height:400px;
+    margin-top:10px;
+    padding:10px;
+    float:left;
+    overflow: hidden;
+}
+
+.gamepad h3 {
+    margin-top:10px;
+    color:yellow;
+    text-align: center;
+}
+
+.gamepad .buttons {
+    margin-right:32%;
+}
+
+.gamepad .button {
+    float:left;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    color:#fff;
+    background-color:#ff0000;
+    margin:0 10px 10px 0;
+}
+
+.gamepad .button div {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 14px;
+}
+
+.gamepad .pressed {
+    color:#000;
+    background-color:#fff;
+}
+
+.gamepad .axes {
+    float:right;
+    width:30%;
+}
+
+.gamepad table {
+    width:90%;
+}
+
+.gamepad td, .gamepad th {
+    text-align: left;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding:0 5px 5px 0;
+}
